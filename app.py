@@ -10,6 +10,8 @@ import pandas as pd
 
 app = Flask(__name__)
 
+last_uploaded_image_path = None
+
 
 # Set the upload folder and allowed extensions
 app.config['UPLOAD_FOLDER'] = 'uploads'
@@ -90,9 +92,13 @@ def process_image():
         if not os.path.exists(app.config['UPLOAD_FOLDER']):
             os.makedirs(app.config['UPLOAD_FOLDER'])
         file_path = os.path.join(app.config['UPLOAD_FOLDER'], file.filename)
+        file.save(file_path)
+
+        # Store the file path in the global variable
+        last_uploaded_image_path = file_path
 
 
-        img=tf.keras.preprocessing.image.load_img(file_path,target_size=(224,224))
+        img=tf.keras.preprocessing.image.load_img(last_uploaded_image_path ,target_size=(224,224))
         model = tf.keras.models.load_model('Toothpaste_Toothbrush_Apple_Banana_Grape_V2.h5')
 
         x=tf.keras.preprocessing.image.img_to_array(img)
