@@ -23,9 +23,6 @@
             <p>Search water footprint</p>
         </div>
         <div class="container">
-
-
-
             <h1 class="text-mid">Data based on User Input</h1>
             <div class="detail">
                 <div class="object">
@@ -34,9 +31,6 @@
                 </div>
                 <div class="content">
                     <h1>Water Footprint</h1>
-
-
-
                     <p>Serving size: {{result['serving_size']}}</p>
                     <p id="water" class="water-content">{{result['water']}} liters per serving</p>
                     <div class="percentage">
@@ -44,20 +38,12 @@
                         <div style="color:#00a86b;"><i class="fa-solid fa-droplet"></i> <p id="green"> {{result['green']}}% </p></div>
                         <div style="color:#4b4a4a;"><i class="fa-solid fa-droplet"></i> <p id="grey"> {{result['grey']}}% </p></div>
                     </div>
-
-
-
                 </div>
             </div>
-
-
             <h1 class="text-mid">Recommendation</h1>
             <div class="recommend">
                 <div class="object">
-
-
-
-                <h2 id="name">{{recom['name']}}</h2>
+                <h1 id="name">{{recom['name']}}</h1>
                 <img id="image" class="object-img" src="{{ recom['image'] }}">
             </div>
             <div class="content">
@@ -71,10 +57,6 @@
                 </div>
             </div>
         </div>
-
-
-
-
         <div class="types">
             <p class="highlight">What is water footprint?</p>
             <p>The water footprint measures the amount of water used to produce each of the goods and services we use. Three types of water footprints are</p>
@@ -85,7 +67,6 @@
         </div>
         <div id="header" hidden></div>
     </div>
-    <!-- <script src="../static/js/object.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(document).ready(function() {

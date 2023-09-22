@@ -3,7 +3,12 @@ let searchTerms = [
     "Orange",
     "Banana",
     "Watermelon",
-    "Mango"
+    "Mango",
+    "Grapes",
+    "Toothpaste",
+    "Toothbrush",
+    "Dental Tablets",
+    "Bamboo Toothbrush"
 ];
 
 const resultBox = document.querySelector(".result-box");

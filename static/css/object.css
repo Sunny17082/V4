@@ -14,6 +14,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
 }
 
 .text {
@@ -40,21 +41,18 @@
 .container {
     width: 60%;
     height: 100%;
-    background-color: #002D62;
     border-radius: 35px;
     padding: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    box-shadow: 0 10px 10px rgb(0, 0, 0, 0.1);
 }
 
 .detail {
     flex-basis: 35%;
     width: 100%;
     height: 100%;
-    background-color: #002D62;
     border-radius: 15px;
     display: flex;
     justify-content: space-between;
@@ -65,7 +63,6 @@
     flex-basis: 35%;
     width: 100%;
     height: 100%;
-    background-color: #002D62;
     border-radius: 15px;
     display: flex;
     justify-content: space-between;
@@ -81,6 +78,7 @@
     padding: 20px;
     background-color: #d1d1d1;
     border: 1px solid #333;
+    text-align: left;
 }
 
 .object {
@@ -106,8 +104,8 @@
 }
 
 .object-img {
-    max-width: 350px;
-    max-height: 226px;
+    width: 350px;
+    height: 226px;
     border-radius: 15px;
     border: 1px solid #000000;
 }
@@ -153,26 +151,6 @@
     font-size: 14px;
 }
 
-.recommend p {
-    font-weight: 600;
-}
-
-.item {
-    display: flex;
-    margin-top: 15px;
-    justify-content: center;
-}
-
-.item p {
-    padding-right: 15px;
-    text-shadow: 0 1px #000000;
-}
-
-.text-mid {
-    color: #d1d1d1;
-    text-shadow: 1px 1px #000000;
-}
-
 @media only screen and (max-width: 600px) {
     .main {
         height: 100%;
@@ -210,5 +188,9 @@
 
     .object, .content {
         margin-bottom: 35px;
+    }
+
+    .object-img {
+        max-width: 100%;
     }
 }
