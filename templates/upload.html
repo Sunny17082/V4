@@ -23,20 +23,15 @@
             <p>Search water footprint</p>
         </div>
         <div class="card">
-
-
             <form id="upload-form" action="/process_image" method="POST" enctype="multipart/form-data">
                 <p>Search water footprint by image</p>
                 <img src="../static/img/upload.png" id="upload" for="input-file">
                 <input type="file" accept="image/*" id="input-file" name="image">
                 <button type="submit" id="search" class="btn"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
             </form>
-
-
         </div>
     </div>
     <div id="header" hidden></div>
-    
     <script>
 
         let upload = document.getElementById("upload");

@@ -18,56 +18,46 @@
 </head>
 <body>
     <div class="main">
+        <div class="login">        
+            <form action="/login" method="POST">
+                <button class="login-btn" type="submit">
+                    Login
+                </button>
+            </form>
+        </div>
         <div class="text">
             <h1>Aqua<span>Vision</span></h1>
             <p>Search water footprint</p>
         </div>
-        <div class="dashboard">
-
-            <!-- <button class="community-btn" onclick="window.location.href='templates/dashboard.html';">Community Dashboard</button> -->
-        
+        <div class="dashboard">        
             <form action="/dashboard" method="POST">
                 <button class="community-btn" type="submit">
                     <i class="fa-solid"></i> Community Dashboard
                 </button>
             </form>
-        
         </div>
         <div class="row-main">
             <div class="column">
                 <div class="container">
                     <div class="option">
                         <p>SEARCH BY IMAGE</p>
-                        <img src="static/img/camera.png">
-
-
-                        <!-- <button class="btn" onclick="window.location.href='templates/upload.html';"><i class="fa-solid fa-magnifying-glass"></i> Search</button> -->
-                        
+                        <img src="static/img/camera.png">                        
                         <form action="/upload" method="POST">
                             <button class="btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
                         </form>
-                    
-                    
                     </div>
-
                 </div>
             </div>
             <div class="column">
                 <div class="container">
                     <div class="option">
                         <p>SEARCH BY TEXT</p>
-                        <img src="static/img/text.png">
-
-
-
-                        <!-- <button class="btn" onclick="window.location.href='templates/search.html';"><i class="fa-solid fa-magnifying-glass"></i> Search</button> -->
-                    
+                        <img src="static/img/text.png">                    
                         <form action="/search" method="POST">
                             <button class="btn" type="submit">
-                                <i class="fa-solid fa-magnifying-glass"></i> Submit
+                                <i class="fa-solid fa-magnifying-glass"></i> Search
                             </button>
                         </form>
-                    
                     </div>
                 </div>
             </div>
